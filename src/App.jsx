@@ -5,7 +5,6 @@ import FancyCursor from './fancyCursor';
 function App() {
   return (
   <>
-  {/* <FancyCursor /> */}
   <Home />
   </>
   
