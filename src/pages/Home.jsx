@@ -7,11 +7,13 @@ import FineCacao from '../components/sections/FineCacao';
 import CraftBakes from '../components/sections/CraftBakes';
 import SupportChat from '../components/common/SupportChat';
 import B2BSection from '../components/sections/b2bsection';
+import ProductsSection from '../components/sections/products';
 
 const Home = () => {
   return (
     <AppLayout>
       <Hero />
+      <ProductsSection />
       <Sourcing />
       <FineCacao />
       <CraftBakes />
