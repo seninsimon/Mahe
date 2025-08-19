@@ -21,7 +21,7 @@ const Header = () => {
     <div className="fixed z-50 w-full">
       <div className="dm-sans !z-10">
         {/* Top Banner */}
-        <div className="bg-black text-white text-center py-2 text-sm relative">
+        <div className="bg-[#8e4921] text-white text-center py-2 text-sm relative">
           Get your Mahe fix on Zomato/Swiggy
           <div className="absolute top-2 right-4 text-sm">
             <select defaultValue="INR ₹" className="" aria-label="Currency">
@@ -63,7 +63,7 @@ const Header = () => {
                 <User className="w-4 h-4" />
                 <span>ACCOUNT</span>
               </button>
-              <button className="flex items-center justify-center space-x-2 bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 w-full sm:w-auto">
+              <button className="flex items-center justify-center space-x-2 bg-[#8e4921] text-white px-4 py-2 rounded-full hover:bg-[#522911] w-full sm:w-auto">
                 <ShoppingCart className="w-4 h-4" />
                 <span>₹ 0 ({cartCount})</span>
               </button>
