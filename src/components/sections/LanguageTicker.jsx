@@ -15,7 +15,7 @@ const LanguageTicker = () => {
   ];
 
   return (
-    <div className="bg-teal-700 py-3 overflow-hidden">
+    <div className="bg-stone-700 py-3 overflow-hidden">
       <div className="flex animate-scroll whitespace-nowrap">
         {[...Array(4)].map((_, i) => (
           <div key={i} className="flex space-x-8 text-white font-bold text-lg">
