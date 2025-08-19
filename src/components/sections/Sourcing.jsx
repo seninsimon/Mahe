@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Sourcing() {
   return (
-    <section className="flex flex-col md:flex-row">
+    <section className="flex flex-col md:flex-row playfair">
       {/* Left side - Text */}
       <motion.div
         className="bg-[#fef8f3] flex flex-col justify-center items-center text-center p-10 md:w-1/2 md:h-screen"
@@ -12,7 +12,7 @@ export default function Sourcing() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+        <h2 className="text-5xl md:text-6xl font-bold text-black mb-4">
           Sourced with Passion, Baked with Love
         </h2>
         <p className="text-black max-w-xl mb-6">
@@ -21,9 +21,7 @@ export default function Sourcing() {
           Our commitment to freshness means every product is made to order.
         </p>
         <motion.button
-          className="border border-black text-black px-6 py-3 rounded-full font-semibold hover:bg-black hover:text-white transition"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+          className="border border-black hover:border-[#8e4921] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#8e4921] hover:text-white transition"
         >
           VISIT OUR BAKEHOUSE
         </motion.button>
@@ -38,22 +36,10 @@ export default function Sourcing() {
         viewport={{ once: true }}
       >
         <img
-          src="/images/img1.png" // replace with your actual image
+          src="/pexels-andrew-31953354.jpg" // replace with your actual image
           alt="Sourcing Ingredients"
           className="w-full h-full object-cover"
         />
-
-        {/* Video (commented out)
-        <video
-          src="/videos/sourcing.mp4"
-          className="w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-        ></video>
-        */}
       </motion.div>
     </section>
   );

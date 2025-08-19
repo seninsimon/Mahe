@@ -23,14 +23,15 @@ const Navbar = () => {
     'Subculture: Merch & Events',
     'Taufah',
     'Bloom School',
-    'Contact ▼'
+    'Contact'
   ];
 
   return (
+    //  ${
+        // isSticky ? 'fixed top-0 left-0 z-50 shadow-md' : 'relative'
+      // }
     <nav
-      className={`bg-white text-black px-6 py-4 border-t w-full transition-all ${
-        isSticky ? 'fixed top-0 left-0 z-50 shadow-md' : 'relative'
-      }`}
+      className={`dm-sans bg-white text-black px-6 py-4 border-t w-full transition-all`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Desktop Links */}
@@ -61,7 +62,7 @@ const Navbar = () => {
             <a
               key={i}
               href="#"
-              className="text-gray-900 font-bold hover:text-gray-600 transition-colors"
+              className="text-gray-900 hover:text-gray-600 transition-colors"
             >
               {link}
             </a>

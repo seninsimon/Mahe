@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const FineCacao = () => {
   return (
-    <section className="flex flex-col md:flex-row">
+    <section className="flex flex-col md:flex-row playfair">
       {/* Left side - Image */}
       <motion.div
         className="md:w-1/2 h-[50vh] md:h-screen"
@@ -13,7 +13,7 @@ const FineCacao = () => {
         viewport={{ once: true }}
       >
         <img
-          src="/images/img2.jpg" // replace with your actual image
+          src="/pexels-cristian-rojas-10040003.jpg" // replace with your actual image
           alt="Fine Cacao"
           className="w-full h-full object-cover"
         />
@@ -41,7 +41,7 @@ const FineCacao = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+        <h2 className="text-5xl md:text-6xl font-bold text-black mb-4">
           Handcrafted Cacao Indulgence
         </h2>
         <p className="text-black max-w-xl mb-6">
@@ -51,9 +51,7 @@ const FineCacao = () => {
           indulgence in its purest form.
         </p>
         <motion.button
-          className="border border-black text-black px-6 py-3 rounded-full font-semibold hover:bg-black hover:text-white transition"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+          className="border border-black hover:border-[#8e4921] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#8e4921] hover:text-white transition"
         >
           DISCOVER CACAO DELIGHTS
         </motion.button>

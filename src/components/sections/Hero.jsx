@@ -1,9 +1,8 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="relative h-screen w-full bg-black overflow-hidden">
+    <section className="playfair relative h-screen w-full overflow-hidden">
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
@@ -14,27 +13,24 @@ const Hero = () => {
         playsInline
       ></video>
 
-      
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/40" />
 
-      {/* Centered Text */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-        <motion.h1
-          className="text-yellow-800 text-5xl md:text-6xl font-bold"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          MAHÈ Artisanal
-        </motion.h1>
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 pt-36">
+        <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-light tracking-wide leading-tight capitalize">
+          Specialty coffee. Craft bakes. Fine cacao.
+          <br />
+          <span className="block">
+            From the subcontinent. For all.
+          </span>
+        </h1>
 
-        <motion.p
-          className="text-gray-200 mt-4 max-w-2xl text-9xl md:text-xl"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-        >
-          Crafting fine flavors, specialty coffee, and artisanal delights with passion and precision.
-        </motion.p>
+        {/* Optional: Add a subtitle or call-to-action */}
+        <div className="mt-8 dm-sans">
+          <button className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-[#8e4921] hover:text-white transition-all">
+            Explore MAHÈ
+          </button>
+        </div>
       </div>
     </section>
   );

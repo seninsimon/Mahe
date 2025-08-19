@@ -6,16 +6,17 @@ import Sourcing from '../components/sections/Sourcing';
 import FineCacao from '../components/sections/FineCacao';
 import CraftBakes from '../components/sections/CraftBakes';
 import SupportChat from '../components/common/SupportChat';
+import B2BSection from '../components/sections/b2bsection';
 
 const Home = () => {
   return (
     <AppLayout>
       <Hero />
-      <LanguageTicker />
       <Sourcing />
       <FineCacao />
       <CraftBakes />
-      <SupportChat/>
+      <B2BSection />
+      {/* <SupportChat/> */}
     </AppLayout>
   );
 };

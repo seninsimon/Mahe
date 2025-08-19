@@ -1,13 +1,9 @@
 @import "tailwindcss";
 
-
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
 }
 
-p {
-  font-family: 'Merriweather', serif;
-  font-weight: 400;
-  font-size: 17px;
+.playfair {
+  font-family: "Playfair", serif;
 }
-
