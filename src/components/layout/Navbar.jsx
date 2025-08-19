@@ -39,7 +39,7 @@ const Navbar = () => {
             <a
               key={i}
               href="#"
-              className="text-gray-900 font-bold hover:text-gray-600 transition-colors"
+              className="text-yellow-800 font-bold hover:text-gray-600 transition-colors"
             >
               {link}
             </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
             <a
               key={i}
               href="#"
-              className="text-gray-900 font-bold hover:text-gray-600 transition-colors"
+              className="text-stone-900 font-bold hover:text-gray-600 transition-colors"
             >
               {link}
             </a>
