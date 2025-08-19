@@ -80,10 +80,7 @@ const ProductsSection = () => {
                 {/* View All Button */}
                 <div className="mt-10 text-center">
                     <button
-                        className="px-8 py-3 font-semibold rounded-full transition text-white"
-                        style={{
-                            backgroundColor: "#8e4921",
-                        }}
+                        className="px-8 py-3 border border-[#8e4921] hover:bg-[#8e4921] font-semibold rounded-full transition text-[#8e4921] hover:text-white"
                     >
                         View All Products
                     </button>
